@@ -4,4 +4,101 @@
 
 body {
   font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1e0606;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #1e0606;
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+  font-family: "Crimson Text", serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  color: #1e0606;
+}
+
+a {
+  text-decoration: none;
+  color: #1e0606;
+}
+
+.button {
+  display: inline-block;
+  padding: 9px 22px 9px 22px;
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+}
+
+.undoted {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hidden {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.header {
+  max-width: 1180px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.header__list {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.header__button {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.footer {
+  background: #434343;
+}
+
+.footer__title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 23px;
+  color: #aaaaaa;
+  font-weight: normal;
+  border-bottom: 1px solid #666666;
+}
+
+.footer__link {
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.footer__text {
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.footer__link-dl {
+  color: #a2a2a2;
+  font-weight: normal;
 }

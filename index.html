@@ -32,7 +32,7 @@
         <img src="#" alt="logo" />
       </div>
       <nav class="header__nav">
-        <ul class="header__list">
+        <ul class="header__list undoted">
           <li class="header__item">
             <a href="#" target="_blank" class="header__link">Blog</a>
           </li>
@@ -57,45 +57,61 @@
     <!-- MAIN -->
     <main>
       <section class="banner">
-        <h1 class="banner__heading">THE OOH NOO COLLECTION</h1>
-        <h3 class="banner__titile">Designed in Slovenia</h3>
-        <a href="#" target="_blank" class="button">EXPLORE NOW</a>
-        <div class="banner__innerpic">
-          <img src="#" alt="cute monster" class="banner__img" />
+        <div class="banner__screen">
+          <h1 class="banner__heading">THE OOH NOO COLLECTION</h1>
+          <h3 class="banner__title">Designed in Slovenia</h3>
+          <a href="#" target="_blank" class="button banner__button">
+            EXPLORE NOW
+          </a>
+          <!-- <div class="banner__innerpic">
+            <img src="img/monster.png" alt="cute monster" class="banner__img" />
+          </div>-->
         </div>
+
         <a href="#" target="_blank" class="banner__link">
           Free (continental) USA shipping on all orders of $100 USD or more!
         </a>
+        <div class="banner__innerpic">
+          <img src="img/monster.png" alt="cute monster" class="banner__img" />
+        </div>
+        <!-- <div class="banner__img"></div> -->
       </section>
       <!-- /banner -->
       <section class="products">
         <h2 class="products__heading">Category Products</h2>
-        <ul class="products__list">
+        <ul class="products__list undoted">
           <li class="products__item">
-            <a href="#" target="_blank" class="products__link">APPAREL KIDS</a>
-          </li>
-          <li class="products__item">
-            <a href="#" target="_blank" class="products__link">HOLIDAY SHOP</a>
-          </li>
-          <li class="products__item">
-            <a href="#" target="_blank" class="products__link">TOYS</a>
-          </li>
-          <li class="products__item">
-            <a href="#" target="_blank" class="products__link">ACCESSORIES</a>
-          </li>
-          <li class="products__item">
-            <a href="#" target="_blank" class="products__link">SALE</a>
-          </li>
-          <li class="products__item">
-            <a href="#" target="_blank" class="products__link">
-              APPAREL ADULTS
+            <a href="#" target="_blank" class="products__link products__kids">
             </a>
           </li>
+          <li class="products__item">
+            <a
+              href="#"
+              target="_blank"
+              class="products__link products__holiday"
+            >
+            </a>
+          </li>
+          <li class="products__item">
+            <a
+              href="#"
+              target="_blank"
+              class="products__link products__toys"
+            ></a>
+          </li>
+          <li class="products__item">
+            <a
+              href="#"
+              target="_blank"
+              class="products__link products__accessories"
+            ></a>
+          </li>
         </ul>
-        <div class="products__arrows">
-          <img src="#" alt="left arrow" class="products__arrows-left" />
-          <img src="#" alt="right arrow" class="products__arrows-right" />
+        <div class="products__arrows-left">
+          <!-- <img src="#" alt="left arrow" class="products__arrows-left" />
+          <img src="#" alt="right arrow" class="products__arrows-right" /> -->
         </div>
+        <div class="products__arrows-right"></div>
         <p class="products__text">
           Modern finds for the modern home. Curated goods by unique designers
           around the world from fashion to furniture for kids and adults.
@@ -104,10 +120,14 @@
       <!-- /products -->
       <section class="delivery">
         <div class="delivery__innerpic">
-          <img src="#" alt="photo of a girl" class="delivery__img" />
+          <img
+            src="img/foto_girl.jpg"
+            alt="photo of a girl"
+            class="delivery__img"
+          />
         </div>
         <h2 class="delivery__heading">Delivery</h2>
-        <ul class="delivery__list">
+        <ul class="delivery__list undoted">
           <li class="delivery__item">
             <a href="#" target="_blank" class="delivery__link">Delivery</a>
           </li>
@@ -134,8 +154,8 @@
       </section>
       <!-- /delivery -->
       <section class="partners">
-        <h2 class="partners__heading">Our partners</h2>
-        <ul class="partners__list">
+        <h2 class="partners__heading hidden">Our partners</h2>
+        <ul class="partners__list undoted">
           <li class="partners__item">
             <a href="#" target="_blank" class="partners__link">
               <img src="#" alt="mail.ru" class="partners__img" />
@@ -192,7 +212,7 @@
       <section class="footer__info">
         <div class="footer__navigation">
           <h4 class="footer__title">Navigation</h4>
-          <ul class="footer__list">
+          <ul class="footer__list undoted">
             <li class="footer__item">
               <a href="#" target="_blank" class="footer__link">About Us</a>
             </li>
@@ -221,8 +241,8 @@
         </div>
         <!-- /navigation -->
         <div>
-          <h4 class="footer__title">Customer footerrmation</h4>
-          <ul class="footer__list">
+          <h4 class="footer__title">Customer Information</h4>
+          <ul class="footer__list undoted">
             <li class="footer__item">
               <a href="#" target="_blank" class="footer__link">Contact Us</a>
             </li>
@@ -258,7 +278,7 @@
             <input type="text" placeholder="Email" class="footer__input" />
             <button class="button">Join</button>
           </form>
-          <ul class="footer__icons icons">
+          <ul class="footer__icons icons undoted">
             <li class="icons__item">
               <a href="#" target="_blank" class="icons-link">
                 <img src="#" alt="facebook" class="icons-img" />
