@@ -1,6 +1,77 @@
 .breadcrumb,
 .toy__prod,
-.toy__slider {
+.toy__slider,
+.toy__heading {
   max-width: 1180px;
   margin: auto;
+}
+.toy__heading {
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: #1e0606;
+}
+
+.toy__choice {
+  background: rgba(125, 151, 218, 0.2);
+}
+
+.choice__title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1e0606;
+  text-transform: capitalize;
+}
+
+.choice__checkmark {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1e0606;
+}
+
+.choice__sort-min,
+.choice__sort-middle,
+.choice__sort-max {
+  width: 80px;
+  height: 35px;
+}
+
+.choice__sort-active {
+  background: #f3d0db;
+}
+
+.toy__item {
+  width: 380px;
+  height: 497px;
+}
+
+.toy__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+}
+.toy__price {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.toy__count {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1e0606;
+}
+
+.toy__count-active {
+  color: #c29974;
 }

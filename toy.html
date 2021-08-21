@@ -29,7 +29,9 @@
   <body>
     <header class="header">
       <div>
-        <img src="#" alt="logo" />
+        <a href="index.html" class="header logo">
+          <img src="img/logo.png" alt="logo" />
+        </a>
       </div>
       <nav class="header__nav">
         <ul class="header__list undoted">
@@ -47,7 +49,7 @@
       <form action="#" class="header__search">
         <input type="text" class="header__input" />
         <button class="header__btn">
-          <img src="#" alt="search" />
+          <img src="img/search.jpg" alt="search" class="btn-img" />
         </button>
       </form>
       <a href="#" class="header__button" target="_blank">Contact Us</a>
@@ -67,7 +69,7 @@
               <a href="#" class="breadcrumb__link">Catalog</a>
             </li>
             <li class="breadcrumb__item">
-              <a href="#" class="breadcrumb__link">Toys</a>
+              <a href="#" class="breadcrumb__link breadcrumb__active">Toys</a>
             </li>
           </ul>
         </nav>
@@ -119,9 +121,17 @@
             </li>
             <li class="choice__item">
               <h2 class="choice__title">Amount</h2>
-              <a href="#" class="choice__btn">0-5</a>
-              <a href="#" class="choice__btn">10-20</a>
-              <a href="#" class="choice__btn">20-50</a>
+              <ul class="choice__sort undoted">
+                <li class="choice__sort-min choice__sort-active">
+                  <a href="#" class="choice__btn choice__btn-active">0-5</a>
+                </li>
+                <li class="choice__sort-middle">
+                  <a href="#" class="choice__btn">10-20</a>
+                </li>
+                <li class="choice__sort-max">
+                  <a href="#" class="choice__btn">20-50</a>
+                </li>
+              </ul>
             </li>
             <li class="choice__item">
               <a href="#" target="_blank" class="button">Apply</a>
@@ -129,56 +139,72 @@
           </ul>
         </div>
         <ul class="toy__prod undoted">
-          <li class="toy__item">
+          <li class="toy__item toy__shark">
             <a href="#" target="_blank" class="toy__link">
-              <img src="#" alt="product foto" class="toy__img" />
+              <img src="img/sharky.png" alt="product foto" class="toy__img" />
               <span class="toy__text">SHARKY BEAN BAG CHAIR COVER</span>
               <span class="toy__price">$60.00 USD</span>
             </a>
           </li>
           <li class="toy__item">
             <a href="#" target="_blank" class="toy__link">
-              <img src="#" alt="product foto" class="toy__img" />
+              <img src="img/brass.png" alt="product foto" class="toy__img" />
               <span class="toy__text">BRASS DECO FRAMES</span>
               <span class="toy__price">$66.00 USD</span>
             </a>
           </li>
           <li class="toy__item">
             <a href="#" target="_blank" class="toy__link">
-              <img src="#" alt="product foto" class="toy__img" />
+              <img src="img/apron.png" alt="product foto" class="toy__img" />
               <span class="toy__text">CIBO FULL APRON</span>
               <span class="toy__price">$60.00 USD</span>
             </a>
           </li>
           <li class="toy__item">
             <a href="#" target="_blank" class="toy__link">
-              <img src="#" alt="product foto" class="toy__img" />
+              <img
+                src="img/gumball_machine.png"
+                alt="product foto"
+                class="toy__img"
+              />
               <span class="toy__text">GATCHA GATCHA GUMBALL MACHINE</span>
               <span class="toy__price">$56.00 USD</span>
             </a>
           </li>
           <li class="toy__item">
             <a href="#" target="_blank" class="toy__link">
-              <img src="#" alt="product foto" class="toy__img" />
+              <img src="img/candle.png" alt="product foto" class="toy__img" />
               <span class="toy__text">CHRISTMAS ADVENT SCENTED CANDLE</span>
               <span class="toy__price">$29.00 USD</span>
             </a>
           </li>
           <li class="toy__item">
             <a href="#" target="_blank" class="toy__link">
-              <img src="#" alt="product foto" class="toy__img" />
+              <img
+                src="img/tea_light.png"
+                alt="product foto"
+                class="toy__img"
+              />
               <span class="toy__text">TANGLE SPINNING TEA LIGHT</span>
               <span class="toy__price">$56.00 USD</span>
             </a>
           </li>
         </ul>
         <div class="toy__slider">
-          <img src="#" alt="arrow left" class="toy__arrow-left" />
-          <span class="toy__count">1</span>
+          <img
+            src="img/arrow_left_grey.svg"
+            alt="arrow left"
+            class="toy__arrow-left"
+          />
+          <span class="toy__count toy__count-active">1</span>
           <span class="toy__count">2</span>
           <span class="toy__count">3</span>
           <span class="toy__count">4</span>
-          <img src="#" alt="arrow left" class="toy__arrow-right" />
+          <img
+            src="img/arrow_right_grey.svg"
+            alt="arrow left"
+            class="toy__arrow-right"
+          />
         </div>
       </section>
       <!-- /products -->
@@ -217,7 +243,7 @@
           </ul>
         </div>
         <!-- /navigation -->
-        <div>
+        <div class="footer__customer">
           <h4 class="footer__title">Customer Information</h4>
           <ul class="footer__list undoted">
             <li class="footer__item">
@@ -249,7 +275,7 @@
           </ul>
         </div>
         <!-- /customer-footer -->
-        <div>
+        <div class="footer__connect">
           <h4 class="footer__title">Connect</h4>
           <form action="#" class="footer__form">
             <input type="text" placeholder="Email" class="footer__input" />
@@ -257,23 +283,43 @@
           </form>
           <ul class="footer__icons icons undoted">
             <li class="icons__item">
-              <a href="#" target="_blank" class="icons-link">
-                <img src="#" alt="facebook" class="icons-img" />
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                class="icons-link"
+              >
+                <img src="img/Facebook.png" alt="facebook" class="icons-img" />
               </a>
             </li>
             <li class="icons__item">
-              <a href="#" target="_blank" class="icons-link">
-                <img src="#" alt="twitter" class="icons-img" />
+              <a href="https://twitter.com/" target="_blank" class="icons-link">
+                <img src="img/Twitter.png" alt="twitter" class="icons-img" />
               </a>
             </li>
             <li class="icons__item">
-              <a href="#" target="_blank" class="icons-link">
-                <img src="#" alt="Pinterest" class="icons-img" />
+              <a
+                href="https://www.pinterest.ru/"
+                target="_blank"
+                class="icons-link"
+              >
+                <img
+                  src="img/Pinterest.png"
+                  alt="Pinterest"
+                  class="icons-img"
+                />
               </a>
             </li>
             <li class="icons__item">
-              <a href="#" target="_blank" class="icons-link">
-                <img src="#" alt="Instagram" class="icons-img" />
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="icons-link"
+              >
+                <img
+                  src="img/Instagram.png"
+                  alt="Instagram"
+                  class="icons-img"
+                />
               </a>
             </li>
           </ul>
@@ -282,10 +328,14 @@
         <div class="footer__other">
           <p class="footer__text">Company Rating</p>
           <div class="footer__wrap-stars">
-            <img src="#" alt="stars" class="footer__stars" />
+            <img src="img/stars.png" alt="stars" class="footer__stars" />
           </div>
           <p class="footer__text">Copyright © 2018 Dlk • Design Life Kids</p>
-          <a href="#" target="_blank" class="footer__link-dl">
+          <a
+            href="https://directlinedev.com/"
+            target="_blank"
+            class="footer__link-dl"
+          >
             Web Design — Direct Line Development
           </a>
         </div>

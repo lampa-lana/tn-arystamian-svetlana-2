@@ -29,7 +29,9 @@
   <body>
     <header class="header">
       <div>
-        <img src="#" alt="logo" />
+        <a href="index.html" class="header logo">
+          <img src="img/logo.png" alt="logo" />
+        </a>
       </div>
       <nav class="header__nav">
         <ul class="header__list undoted">
@@ -47,7 +49,7 @@
       <form action="#" class="header__search">
         <input type="text" class="header__input" />
         <button class="header__btn">
-          <img src="#" alt="search" />
+          <img src="img/search.jpg" alt="search" class="btn-img" />
         </button>
       </form>
       <a href="#" class="header__button" target="_blank">Contact Us</a>
@@ -82,6 +84,10 @@
         <ul class="products__list undoted">
           <li class="products__item">
             <a href="#" target="_blank" class="products__link products__kids">
+              <div class="products__names products__long">
+                <p class="products__name">apparel</p>
+                <p class="products__name">kids</p>
+              </div>
             </a>
           </li>
           <li class="products__item">
@@ -90,21 +96,29 @@
               target="_blank"
               class="products__link products__holiday"
             >
+              <div class="products__names products__long">
+                <p class="products__name">holiday</p>
+                <p class="products__name">shop</p>
+              </div>
+            </a>
+          </li>
+          <li class="products__item">
+            <a href="#" target="_blank" class="products__link products__toys">
+              <div class="products__names products__short">
+                <p class="products__name">accessories</p>
+              </div>
             </a>
           </li>
           <li class="products__item">
             <a
               href="#"
               target="_blank"
-              class="products__link products__toys"
-            ></a>
-          </li>
-          <li class="products__item">
-            <a
-              href="#"
-              target="_blank"
               class="products__link products__accessories"
-            ></a>
+            >
+              <div class="products__names products__short">
+                <p class="products__name">shop</p>
+              </div>
+            </a>
           </li>
         </ul>
         <div class="products__arrows-left">
@@ -128,7 +142,7 @@
         </div>
         <h2 class="delivery__heading">Delivery</h2>
         <ul class="delivery__list undoted">
-          <li class="delivery__item">
+          <li class="delivery__item delivery__active">
             <a href="#" target="_blank" class="delivery__link">Delivery</a>
           </li>
           <li class="delivery__item">
@@ -150,30 +164,44 @@
             you and all of the beautiful designers that we work with to thank!
           </p>
         </div>
-        <a href="#" target="_blank" class="button">LEARN MORE</a>
+        <a href="#" target="_blank" class="button delivery__button">
+          LEARN MORE
+        </a>
       </section>
       <!-- /delivery -->
       <section class="partners">
         <h2 class="partners__heading hidden">Our partners</h2>
         <ul class="partners__list undoted">
           <li class="partners__item">
-            <a href="#" target="_blank" class="partners__link">
-              <img src="#" alt="mail.ru" class="partners__img" />
+            <a href="https://mail.ru/" target="_blank" class="partners__link">
+              <img src="img/mail.png" alt="mail.ru" class="partners__img" />
             </a>
           </li>
           <li class="partners__item">
-            <a href="#" target="_blank" class="partners__link">
-              <img src="#" alt="apple" class="partners__img" />
+            <a
+              href="https://www.apple.com/ru/"
+              target="_blank"
+              class="partners__link"
+            >
+              <img src="img/apple.png" alt="apple" class="partners__img" />
             </a>
           </li>
           <li class="partners__item">
-            <a href="#" target="_blank" class="partners__link">
-              <img src="#" alt="eltex" class="partners__img" />
+            <a
+              href="https://eltex-co.ru/"
+              target="_blank"
+              class="partners__link"
+            >
+              <img src="img/eltex.png" alt="eltex" class="partners__img" />
             </a>
           </li>
           <li class="partners__item">
-            <a href="#" target="_blank" class="partners__link">
-              <img src="#" alt="owox" class="partners__img" />
+            <a
+              href="https://www.owox.ru/"
+              target="_blank"
+              class="partners__link"
+            >
+              <img src="img/owox.png" alt="owox" class="partners__img" />
             </a>
           </li>
         </ul>
@@ -198,8 +226,12 @@
             have flown by. It's simply magical.
           </p>
           <div>
-            <a href="#" target="_blank" class="contacts__link">
-              <img src="#" alt="map" class="contacts__img" />
+            <a
+              href="https://www.google.ru/maps/place/Hayes+Valley,+%D0%A1%D0%B0%D0%BD-%D0%A4%D1%80%D0%B0%D0%BD%D1%86%D0%B8%D1%81%D0%BA%D0%BE,+%D0%9A%D0%B0%D0%BB%D0%B8%D1%84%D0%BE%D1%80%D0%BD%D0%B8%D1%8F+94102,+%D0%A1%D0%A8%D0%90/@37.7747213,-122.4297098,16z/data=!3m1!4b1!4m5!3m4!1s0x808580a196ede719:0x2fb5607634331f2f!8m2!3d37.7759073!4d-122.4245247"
+              target="_blank"
+              class="contacts__link"
+            >
+              <img src="img/map.png" alt="map" class="contacts__img" />
             </a>
           </div>
         </div>
@@ -240,7 +272,7 @@
           </ul>
         </div>
         <!-- /navigation -->
-        <div>
+        <div class="footer__customer">
           <h4 class="footer__title">Customer Information</h4>
           <ul class="footer__list undoted">
             <li class="footer__item">
@@ -272,7 +304,7 @@
           </ul>
         </div>
         <!-- /customer-footer -->
-        <div>
+        <div class="footer__connect">
           <h4 class="footer__title">Connect</h4>
           <form action="#" class="footer__form">
             <input type="text" placeholder="Email" class="footer__input" />
@@ -280,23 +312,43 @@
           </form>
           <ul class="footer__icons icons undoted">
             <li class="icons__item">
-              <a href="#" target="_blank" class="icons-link">
-                <img src="#" alt="facebook" class="icons-img" />
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                class="icons-link"
+              >
+                <img src="img/Facebook.png" alt="facebook" class="icons-img" />
               </a>
             </li>
             <li class="icons__item">
-              <a href="#" target="_blank" class="icons-link">
-                <img src="#" alt="twitter" class="icons-img" />
+              <a href="https://twitter.com/" target="_blank" class="icons-link">
+                <img src="img/Twitter.png" alt="twitter" class="icons-img" />
               </a>
             </li>
             <li class="icons__item">
-              <a href="#" target="_blank" class="icons-link">
-                <img src="#" alt="Pinterest" class="icons-img" />
+              <a
+                href="https://www.pinterest.ru/"
+                target="_blank"
+                class="icons-link"
+              >
+                <img
+                  src="img/Pinterest.png"
+                  alt="Pinterest"
+                  class="icons-img"
+                />
               </a>
             </li>
             <li class="icons__item">
-              <a href="#" target="_blank" class="icons-link">
-                <img src="#" alt="Instagram" class="icons-img" />
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="icons-link"
+              >
+                <img
+                  src="img/Instagram.png"
+                  alt="Instagram"
+                  class="icons-img"
+                />
               </a>
             </li>
           </ul>
@@ -305,10 +357,14 @@
         <div class="footer__other">
           <p class="footer__text">Company Rating</p>
           <div class="footer__wrap-stars">
-            <img src="#" alt="stars" class="footer__stars" />
+            <img src="img/stars.png" alt="stars" class="footer__stars" />
           </div>
           <p class="footer__text">Copyright © 2018 Dlk • Design Life Kids</p>
-          <a href="#" target="_blank" class="footer__link-dl">
+          <a
+            href="https://directlinedev.com/"
+            target="_blank"
+            class="footer__link-dl"
+          >
             Web Design — Direct Line Development
           </a>
         </div>

@@ -21,7 +21,7 @@ main {
 
 .banner__img {
   position: absolute;
-  top: 218px;
+  top: 259px;
   right: 366px;
 }
 
@@ -79,35 +79,6 @@ main {
   margin-bottom: 30px;
 }
 
-.products__item {
-  width: 280px;
-  height: 270px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.products__link {
-  display: inline-block;
-  width: 280px;
-  height: 270px;
-}
-
-.products__kids {
-  background-image: url(..//img/app_kids2.png);
-}
-
-.products__holiday {
-  background-image: url(..//img/holiday.png);
-}
-
-.products__toys {
-  background-image: url(..//img/toys2.png);
-}
-
-.products__accessories {
-  background-image: url(..//img/accessories2.png);
-}
-
 .products__arrows-left {
   background-image: url(..//img/arrow_left.svg);
   width: 37px;
@@ -141,10 +112,60 @@ main {
   overflow: hidden;
 }
 
+.delivery__heading {
+  margin-bottom: 11px;
+  padding-left: 60px;
+}
+
 .delivery__item {
+  width: 326px;
+  height: 55px;
+  margin-bottom: 11px;
+  padding-top: 11px;
+  padding-left: 60px;
   font-family: Crimson Text;
   font-style: italic;
   font-weight: normal;
   font-size: 26px;
   line-height: 32px;
+}
+
+.delivery__active {
+  background: rgba(112, 187, 220, 0.2);
+  color: #1e0606;
+  font-weight: bold;
+}
+
+.delivery__wraptext {
+  padding-left: 60px;
+}
+
+.delivery__text {
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.delivery__button {
+  margin-left: 60px;
+}
+
+.partners {
+  margin-bottom: 90px;
+}
+.info {
+  margin-bottom: 100px;
+}
+
+.design {
+  width: 543px;
+  height: 254px;
+  background-color: #e1f0f7;
+  margin-right: 57px;
+  margin-bottom: 20px;
+}
+
+.contacts {
+  width: 543px;
+  height: 254px;
+  background-color: #e1f0f7;
 }

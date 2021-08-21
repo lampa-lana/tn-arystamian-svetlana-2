@@ -2,3 +2,22 @@ main {
   max-width: 1180px;
   margin: auto;
 }
+
+.products__heading {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: #1e0606;
+}
+
+.products {
+  margin-bottom: 55px;
+}
+
+.products__desc {
+  width: 680px;
+  height: 256px;
+  margin: auto;
+  margin-bottom: 55px;
+}
