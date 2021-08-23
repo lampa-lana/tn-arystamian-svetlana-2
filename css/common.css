@@ -154,7 +154,7 @@ a {
   color: #1e0606;
 }
 
-.breadcrumb__active {
+.breadcrumb__link_active {
   color: #1e0606;
   opacity: 0.5;
 }
