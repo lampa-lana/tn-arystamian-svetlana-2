@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Favorite Store DLK</title>
+    <title>DLK Blog</title>
     <link rel="stylesheet" href="css/common.css" class="css" />
-    <link rel="stylesheet" href="css/style.css" class="css" />
+    <link rel="stylesheet" href="css/blog.css" class="css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,210 +46,142 @@
 
     <!-- MAIN -->
     <main>
-      <section class="banner conteiner">
-        <div class="banner__screen">
-          <h1 class="banner__heading">THE OOH NOO COLLECTION</h1>
-          <h3 class="banner__title">Designed in Slovenia</h3>
-          <a href="#" target="_blank" class="button banner__button">
-            EXPLORE NOW
-          </a>
-          <!-- <div class="banner__innerpic">
-            <img src="img/monster.png" alt="cute monster" class="banner__img" />
-          </div>-->
-          <a href="#" target="_blank" class="banner__link">
-            Free (continental) USA shipping on all orders of $100 USD or more!
-          </a>
-        </div>
-
-        <div class="banner__innerpic">
-          <img src="img/monster.png" alt="cute monster" class="banner__img" />
-        </div>
-        <!-- <div class="banner__img"></div> -->
-      </section>
-      <!-- /banner -->
-      <section class="products conteiner">
-        <h2 class="products__heading">Category Products</h2>
-        <ul class="products__list undoted">
-          <li class="products__item">
-            <a href="#" target="_blank" class="products__link products__kids">
-              <div class="products__names products__long">
-                <p class="products__name">apparel</p>
-                <p class="products__name">kids</p>
-              </div>
-            </a>
-          </li>
-          <li class="products__item">
-            <a
-              href="#"
-              target="_blank"
-              class="products__link products__holiday"
-            >
-              <div class="products__names products__long">
-                <p class="products__name">holiday</p>
-                <p class="products__name">shop</p>
-              </div>
-            </a>
-          </li>
-          <li class="products__item">
-            <a href="#" target="_blank" class="products__link products__toys">
-              <div class="products__names products__short">
-                <p class="products__name">toys</p>
-              </div>
-            </a>
-          </li>
-          <li class="products__item">
-            <a
-              href="#"
-              target="_blank"
-              class="products__link products__accessories"
-            >
-              <div class="products__names products__short">
-                <p class="products__name">accessories</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <div class="products__arrows">
-          <div class="products__arrows-left">
-            <svg
-              width="37"
-              height="37"
-              viewBox="-10 0 35 30"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-width="4" />
-            </svg>
-          </div>
-          <div class="products__arrows-right">
-            <svg
-              width="37"
-              height="37"
-              viewBox="-10 0 35 30"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-width="4" />
-            </svg>
-          </div>
-          <p class="products__text">
-            Modern finds for the modern home. Curated goods by unique designers
-            around the world from fashion to furniture for kids and adults.
-          </p>
-        </div>
-      </section>
-      <!-- /products -->
-      <section class="delivery conteiner">
-        <div class="delivery__innerpic">
-          <img
-            src="img/foto_girl.jpg"
-            alt="photo of a girl"
-            class="delivery__img"
-          />
-        </div>
-        <div class="delivery__info">
-          <h2 class="delivery__heading">Delivery</h2>
-          <ul class="delivery__list undoted">
-            <li class="delivery__item delivery__active">
-              <a href="#" target="_blank" class="delivery__link">Delivery</a>
+      <section class="blog conteiner">
+        <h2 class="blog__heading">blog</h2>
+        <nav class="breadcrumb conteiner">
+          <ul class="breadcrumb__list undoted">
+            <li class="breadcrumb__item">
+              <a href="#" class="breadcrumb__link">Home</a>
             </li>
-            <li class="delivery__item">
-              <a href="#" target="_blank" class="delivery__link">Guarantee</a>
-            </li>
-            <li class="delivery__item">
-              <a href="#" target="_blank" class="delivery__link">Credit</a>
+            <li class="breadcrumb__item">
+              <a href="#" class="breadcrumb__link breadcrumb__link_active"
+                >Blog</a
+              >
             </li>
           </ul>
-          <div class="delivery__wraptext">
-            <p class="delivery__text">
-              Some days i feel like i've been working on dlk my entire life and
-              there are other days that i am completely shocked that four years
-              have flown by. It's simply magical.
-            </p>
-            <p class="delivery__text">
-              What started as an outlet to deal with the traumatic loss of my
-              husband, dlk has now become a truly happy place for me and i have
-              you and all of the beautiful designers that we work with to thank!
-            </p>
-          </div>
-          <a href="#" target="_blank" class="button delivery__button">
-            LEARN MORE
-          </a>
-        </div>
-      </section>
-      <!-- /delivery -->
-      <section class="partners conteiner">
-        <h2 class="partners__heading hidden">Our partners</h2>
-        <ul class="partners__list undoted">
-          <li class="partners__item partners__mail">
-            <a href="https://mail.ru/" target="_blank" class="partners__link">
-              <img src="img/mail.png" alt="mail.ru" class="partners__img" />
+        </nav>
+        <ul class="blog__article undoted">
+          <li class="blog__item">
+            <a href="#" class="blog__link">
+              <img src="img/lego_1.jpg" alt="lego" class="blog__img" />
+              <p class="blog__date">23rd August 2018</p>
+              <h3 class="blog__title">
+                Top 5 fastest growing it service companies in philly
+              </h3>
+              <p class="blog__text">
+                Direct Line Development’s Team is excited to announce that we
+                received UpCity’s 2019 Local Excellence Award! This prestigious
+                award is annually presented to the Top 1% of service providers
+                in the given marketplace.
+              </p>
             </a>
           </li>
-          <li class="partners__item partners__apple">
-            <a
-              href="https://www.apple.com/ru/"
-              target="_blank"
-              class="partners__link"
-            >
-              <img src="img/apple.png" alt="apple" class="partners__img" />
+          <li class="blog__item">
+            <a href="#" class="blog__link">
+              <img src="img/dog.jpg" alt="dog" class="blog__img" />
+              <p class="blog__date">23rd August 2018</p>
+              <h3 class="blog__title">Best financial</h3>
+              <p class="blog__text">
+                Direct Line Development is honored to be recognized as one of
+                the Top 100 Fastest Growing Companies 2019 in Philadelphia,
+                according to Growjo’s ranking.
+              </p>
             </a>
           </li>
-          <li class="partners__item partners__eltex">
-            <a
-              href="https://eltex-co.ru/"
-              target="_blank"
-              class="partners__link"
-            >
-              <img src="img/eltex.png" alt="eltex" class="partners__img" />
+          <li class="blog__item">
+            <a href="#" class="blog__link">
+              <img src="img/train.jpg" alt="train" class="blog__img" />
+              <p class="blog__date">23rd August 2018</p>
+              <h3 class="blog__title">
+                Company logo or brand identity: which one is more important?
+                brand identity
+              </h3>
+              <p class="blog__text">
+                To survive in the world of digital marketing, you need to keep
+                up with the latest SEO trends. Here are our simple, but
+                effective, SEO tips for small business success.
+              </p>
             </a>
           </li>
-          <li class="partners__item partners__owox">
-            <a
-              href="https://www.owox.ru/"
-              target="_blank"
-              class="partners__link"
-            >
-              <img src="img/owox.png" alt="owox" class="partners__img" />
+          <li class="blog__item">
+            <a href="#" class="blog__link">
+              <img src="img/cosmo.jpg" alt="cosmoman" class="blog__img" />
+              <p class="blog__date">23rd August 2018</p>
+              <h3 class="blog__title">Best financial</h3>
+              <p class="blog__text">
+                Direct Line Development is honored to be recognized as one of
+                the Top 100 Fastest Growing Companies 2019 in Philadelphia,
+                according to Growjo’s ranking.
+              </p>
+            </a>
+          </li>
+          <li class="blog__item">
+            <a href="#" class="blog__link">
+              <img src="img/toy_girl.jpg" alt="girl" class="blog__img" />
+              <p class="blog__date">23rd August 2018</p>
+              <h3 class="blog__title">
+                Company logo or brand identity: which one is more important?
+                brand identity
+              </h3>
+              <p class="blog__text">
+                To survive in the world of digital marketing, you need to keep
+                up with the latest SEO trends. Here are our simple, but
+                effective, SEO tips for small business success.
+              </p>
+            </a>
+          </li>
+          <li class="blog__item">
+            <a href="#" class="blog__link">
+              <img src="img/rock.jpg" alt="rocks" class="blog__img" />
+              <p class="blog__date">23rd August 2018</p>
+              <h3 class="blog__title">
+                Top 5 fastest growing it service companies in philly
+              </h3>
+              <p class="blog__text">
+                Direct Line Development’s Team is excited to announce that we
+                received UpCity’s 2019 Local Excellence Award! This prestigious
+                award is annually presented to the Top 1% of service providers
+                in the given marketplace.
+              </p>
             </a>
           </li>
         </ul>
-      </section>
-      <!-- /partners -->
-      <section class="info conteiner">
-        <div class="design">
-          <div class="design__wrap">
-            <h2 class="design__heading">Design Life Kids</h2>
-            <h3 class="design__title">About Us</h3>
-            <p class="design__text">
-              Some days i feel like i've been working on dlk my entire life and
-              there are other days that i am completely shocked that four years
-              have flown by. It's simply magical.
-            </p>
-            <a href="#" target="_blank" class="button">buy now</a>
-          </div>
+        <div class="blog__slider conteiner">
+          <svg
+            width="18"
+            height="30"
+            viewBox="0 0 18 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 2L3 15L16 28"
+              stroke="#1E0606"
+              stroke-opacity="0.12"
+              stroke-width="4"
+            />
+          </svg>
+
+          <span class="blog__count blog__count-active">1</span>
+          <span class="blog__count">2</span>
+          <span class="blog__count">3</span>
+          <span class="blog__count">4</span>
+          <svg
+            width="18"
+            height="30"
+            viewBox="0 0 18 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2 2L15 15L2 28"
+              stroke="#1E0606"
+              stroke-opacity="0.12"
+              stroke-width="4"
+            />
+          </svg>
         </div>
-        <div class="contacts">
-          <div class="contacts__wrap">
-            <h2 class="contacts__heading">Contacts</h2>
-            <p class="contacts__text">
-              Some days i feel like i've been working on dlk my entire life and
-              there are other days that i am completely shocked that four years
-              have flown by. It's simply magical.
-            </p>
-            <div class="contacts__map">
-              <a
-                href="https://www.google.ru/maps/place/Hayes+Valley,+%D0%A1%D0%B0%D0%BD-%D0%A4%D1%80%D0%B0%D0%BD%D1%86%D0%B8%D1%81%D0%BA%D0%BE,+%D0%9A%D0%B0%D0%BB%D0%B8%D1%84%D0%BE%D1%80%D0%BD%D0%B8%D1%8F+94102,+%D0%A1%D0%A8%D0%90/@37.7747213,-122.4297098,16z/data=!3m1!4b1!4m5!3m4!1s0x808580a196ede719:0x2fb5607634331f2f!8m2!3d37.7759073!4d-122.4245247"
-                target="_blank"
-                class="contacts__link"
-              >
-                <img src="img/map.png" alt="map" class="contacts__img" />
-              </a>
-            </div>
-          </div>
-        </div>
       </section>
-      <!-- /info -->
     </main>
     <!-- /MAIN -->
 
