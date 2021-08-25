@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
   font-size: 16px;
   line-height: 22px;
   color: #1e0606;
@@ -65,7 +66,7 @@ a {
   font-size: 0;
 }
 
-.conteiner {
+.container {
   max-width: 1180px;
   margin: auto;
 }
@@ -165,7 +166,6 @@ a {
 
 .footer__link {
   color: #ffffff;
-  font-style: normal;
   font-weight: normal;
 }
 
@@ -194,7 +194,6 @@ a {
 .footer__form button {
   width: 81px;
   font-family: "Open Sans", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
