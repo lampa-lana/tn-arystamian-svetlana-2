@@ -1,0 +1,40 @@
+.contact__heading {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: #1e0606;
+  margin-bottom: 15px;
+}
+
+.breadcrumb {
+  margin-bottom: 50px;
+}
+
+.contact__field {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.contact__form {
+  max-width: 680px;
+  background: #e5eaf8;
+  padding: 50px 100px;
+  margin: 0 auto;
+  margin-right: 120px;
+}
+
+.contact__text {
+  max-width: 380px;
+}
+
+.contact__slogan {
+  max-width: 380px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #c29974;
+}

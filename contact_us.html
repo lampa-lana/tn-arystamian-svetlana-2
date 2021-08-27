@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Favorite Store DLK</title>
+    <title>Contact DLK</title>
     <link rel="stylesheet" href="css/common.css" class="css" />
-    <link rel="stylesheet" href="css/style.css" class="css" />
+    <link rel="stylesheet" href="css/contact_us.css" class="css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,700;1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,700;1,400;1,700&family=Montserrat:wght@300;600;700&family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -45,7 +45,87 @@
     <!-- / header-->
 
     <!-- MAIN -->
-    <main></main>
+    <main class="container">
+      <section class="contact">
+        <h1 class="contact__heading">Contact Us</h1>
+        <nav class="breadcrumb container">
+          <ul class="breadcrumb__list undoted">
+            <li class="breadcrumb__item">
+              <a href="#" class="breadcrumb__link">Home</a>
+            </li>
+            <li class="breadcrumb__item">
+              <a href="#" class="breadcrumb__link breadcrumb__link_active">
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="contact__field">
+          <form action="#" class="contact__form">
+            <fieldset class="field_2_column">
+              <div class="label-wrapper">
+                <label for="input-name">Name</label>
+                <input
+                  type="text"
+                  id="input-name"
+                  class="contact__input"
+                  placeholder="Ivan Ivanov"
+                />
+              </div>
+            </fieldset>
+            <fieldset>
+              <div class="label-wrapper">
+                <label for="input-email">E-mail</label>
+                <input type="email" id="input-email" class="contact__input" />
+              </div>
+              <div class="label-wrapper">
+                <label for="input-phone">Phone</label>
+                <input
+                  type="number"
+                  id="input-phone"
+                  class="contact__input"
+                  required
+                />
+              </div>
+            </fieldset>
+            <fieldset>
+              <div class="label-wrapper">
+                <label for="input-email">Message</label>
+                <textarea name="" cols="3" rows="1"></textarea>
+              </div>
+            </fieldset>
+            <fieldset>
+              <ul class="undoted checkbox-list">
+                <li>
+                  <input
+                    type="checkbox"
+                    id="check-cash"
+                    class="checkbox-input"
+                    disabled
+                  />
+                  <label for="check-cash" class="checkbox-label"
+                    >By clicking on the button, you consent to the processing of
+                    your personal data
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button" type="submit">Submit</button>
+          </form>
+          <div class="contact__info">
+            <p class="contact__text">
+              Our support team are on-hand to assist with any issues you are
+              experiencing.
+            </p>
+            <p class="contact__text">
+              Please use the form to contact us with your needs. Send us a
+              message and we'll respond as soon as possible.
+            </p>
+            <p class="contact__slogan">An expert is waiting to help you!</p>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- /MAIN -->
 

@@ -71,6 +71,11 @@ a {
   margin: auto;
 }
 
+/* CONTACT-FORM */
+fieldset {
+  border: none;
+}
+
 /* HEADER */
 
 .header {
