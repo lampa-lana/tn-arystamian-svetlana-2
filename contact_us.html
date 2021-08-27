@@ -34,12 +34,9 @@
           </li>
         </ul>
       </nav>
-      <form action="#" class="header__search">
-        <input type="text" class="header__input" />
-        <button class="header__btn">
-          <img src="img/search.jpg" alt="search" class="btn-img" />
-        </button>
-      </form>
+      <button class="header__btn">
+        <img src="img/search.jpg" alt="search" class="btn-img" />
+      </button>
       <a href="#" class="header__button" target="_blank">contact us</a>
     </header>
     <!-- / header-->
@@ -47,7 +44,7 @@
     <!-- MAIN -->
     <main class="container">
       <section class="contact">
-        <h1 class="contact__heading">Contact Us</h1>
+        <h1 class="contact__heading">Contact&nbsp;&nbsp;Us</h1>
         <nav class="breadcrumb container">
           <ul class="breadcrumb__list undoted">
             <li class="breadcrumb__item">
@@ -62,7 +59,7 @@
         </nav>
         <div class="contact__field">
           <form action="#" class="contact__form">
-            <fieldset class="field_2_column">
+            <fieldset>
               <div class="label-wrapper">
                 <label for="input-name">Name</label>
                 <input
@@ -73,19 +70,19 @@
                 />
               </div>
             </fieldset>
-            <fieldset>
-              <div class="label-wrapper">
-                <label for="input-email">E-mail</label>
-                <input type="email" id="input-email" class="contact__input" />
-              </div>
+            <fieldset class="field_2_column">
               <div class="label-wrapper">
                 <label for="input-phone">Phone</label>
                 <input
-                  type="number"
+                  type="tel"
                   id="input-phone"
                   class="contact__input"
                   required
                 />
+              </div>
+              <div class="label-wrapper">
+                <label for="input-email">Email</label>
+                <input type="email" id="input-email" class="contact__input" />
               </div>
             </fieldset>
             <fieldset>
@@ -94,23 +91,21 @@
                 <textarea name="" cols="3" rows="1"></textarea>
               </div>
             </fieldset>
-            <fieldset>
-              <ul class="undoted checkbox-list">
-                <li>
-                  <input
-                    type="checkbox"
-                    id="check-cash"
-                    class="checkbox-input"
-                    disabled
-                  />
-                  <label for="check-cash" class="checkbox-label"
-                    >By clicking on the button, you consent to the processing of
-                    your personal data
-                  </label>
-                </li>
-              </ul>
+            <fieldset class="checkbox-wrap">
+              <div class="checkbox-list">
+                <input
+                  type="checkbox"
+                  id="check-cash"
+                  class="checkbox-input"
+                  disabled
+                />
+                <label for="check-cash" class="checkbox-label">
+                  By clicking on the button, you consent to the processing of
+                  your personal data
+                </label>
+              </div>
             </fieldset>
-            <button class="button" type="submit">Submit</button>
+            <button class="button contact__button" type="submit">Submit</button>
           </form>
           <div class="contact__info">
             <p class="contact__text">

@@ -5,7 +5,7 @@
   line-height: 49px;
   text-transform: uppercase;
   color: #1e0606;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .breadcrumb {
@@ -20,7 +20,7 @@
 .contact__form {
   max-width: 680px;
   background: #e5eaf8;
-  padding: 50px 100px;
+  padding: 42px 40px;
   margin: 0 auto;
   margin-right: 120px;
 }
@@ -37,4 +37,29 @@
   line-height: 34px;
   text-transform: uppercase;
   color: #c29974;
+}
+
+.contact__button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.checkbox-wrap {
+  margin-bottom: 16px;
+}
+
+.header {
+  margin-bottom: 60px;
+}
+
+.contact__text,
+.contact__slogan {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
 }
