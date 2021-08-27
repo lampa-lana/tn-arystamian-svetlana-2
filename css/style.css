@@ -1,34 +1,93 @@
 /* BANNER */
 .banner {
-  padding-top: 88px;
   margin-bottom: 90px;
+  padding-top: 90px;
 }
 
-.banner__screen {
-  height: 411px;
-  background-color: #eee4db;
+.banner__slider {
+  display: flex;
   position: relative;
+  max-width: 61px;
+  max-height: 129px;
+  z-index: 1;
 }
 
+.banner__wrap {
+  background-color: #eee4db;
+}
+
+.banner__num {
+  display: block;
+  position: absolute;
+  left: 26px;
+  top: 20px;
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 73px;
+  color: rgba(30, 6, 6, 0.05);
+}
+
+.banner__slider-item {
+  position: relative;
+  width: 31px;
+  height: 3px;
+  top: 100px;
+  left: 50px;
+  background: #d6cac2;
+}
+
+.item-one {
+  top: 100px;
+  left: 30px;
+}
+.item-two {
+  top: 111px;
+  left: 30px;
+}
+
+.item-three {
+  top: 122px;
+  left: 30px;
+}
+
+.item-four {
+  top: 133px;
+  left: 30px;
+}
+
+.banner__btn {
+  position: absolute;
+  width: 31px;
+  height: 3px;
+  background: #d6cac2;
+  border: none;
+  cursor: pointer;
+}
+
+.banner__btn-active {
+  background: rgba(30, 6, 6, 0.6);
+}
 .banner__innerpic {
+  position: relative;
   max-width: 635px;
   max-height: 461px;
+  z-index: 1;
 }
 
 .banner__img {
-  max-width: 635px;
-  max-height: 461px;
   position: absolute;
-  bottom: 286px;
-  right: 206px;
-  left: 544px;
+  max-width: 635px;
+  right: 100px;
+  left: 445px;
+  bottom: 0;
 }
 
 .banner__heading {
   max-width: 307px;
   margin: 0;
   padding: 0;
-  padding-top: 94px;
+  padding-top: 80px;
   margin-bottom: 18px;
   margin-left: 133px;
   font-weight: bold;

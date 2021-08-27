@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,700;1,400;1,700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,700;1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -47,28 +47,47 @@
     <!-- MAIN -->
     <main class="container">
       <section class="banner">
-        <div class="banner__screen">
-          <h1 class="banner__heading">THE OOH NOO COLLECTION</h1>
-          <h3 class="banner__title">Designed in Slovenia</h3>
-          <a href="#" target="_blank" class="button banner__button">
-            EXPLORE NOW
-          </a>
-          <!-- <div class="banner__innerpic">
+        <div class="banner__wrap">
+          <div class="banner__slider">
+            <span class="banner__num">01</span>
+            <ul class="banner__slider-list undoted">
+              <li class="banner__slider-item item-one">
+                <button class="banner__btn banner__btn-active"></button>
+              </li>
+              <li class="banner__slider-item item-two">
+                <button class="banner__btn"></button>
+              </li>
+              <li class="banner__slider-item item-three">
+                <button class="banner__btn"></button>
+              </li>
+              <li class="banner__slider-item item-four">
+                <button class="banner__btn"></button>
+              </li>
+            </ul>
+          </div>
+          <div class="banner__screen">
+            <h1 class="banner__heading">THE OOH NOO COLLECTION</h1>
+            <h3 class="banner__title">Designed in Slovenia</h3>
+            <a href="#" target="_blank" class="button banner__button">
+              EXPLORE NOW
+            </a>
+          </div>
+          <div class="banner__innerpic">
             <img src="img/monster.png" alt="cute monster" class="banner__img" />
-          </div>-->
-          <a href="#" target="_blank" class="banner__link">
-            Free (continental) USA shipping on all orders of $100 USD or more!
-          </a>
+          </div>
         </div>
-
-        <div class="banner__innerpic">
-          <img src="img/monster.png" alt="cute monster" class="banner__img" />
-        </div>
+        <a href="#" target="_blank" class="banner__link">
+          Free (continental) USA shipping on all orders of $100 USD or more!
+        </a>
         <!-- <div class="banner__img"></div> -->
       </section>
       <!-- /banner -->
       <section class="products">
-        <h2 class="products__heading">Category Products</h2>
+        <h2 class="products__heading">
+          <a href="products.html" target="_blank" class="products__breadcrumb">
+            Category Products
+          </a>
+        </h2>
         <ul class="products__list undoted">
           <li class="products__item">
             <a href="#" target="_blank" class="products__link products__kids">
@@ -91,7 +110,11 @@
             </a>
           </li>
           <li class="products__item">
-            <a href="#" target="_blank" class="products__link products__toys">
+            <a
+              href="toy.html"
+              target="_blank"
+              class="products__link products__toys"
+            >
               <div class="products__names products__short">
                 <p class="products__name">toys</p>
               </div>
