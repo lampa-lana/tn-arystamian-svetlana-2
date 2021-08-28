@@ -132,11 +132,14 @@ label {
   width: 100%;
 }
 
-.checkbox-list {
+.checkbox-list,
+.radio-list {
   display: flex;
   align-items: center;
 }
-.checkbox-label {
+
+.checkbox-label,
+.radio-label {
   position: relative;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
@@ -148,13 +151,16 @@ label {
 }
 
 .checkbox-label:before,
-.checkbox-label:after {
+.checkbox-label:after,
+.radio-label:before,
+.radio-label:after {
   content: "";
   display: block;
   position: absolute;
 }
 
-.checkbox-label:before {
+.checkbox-label:before,
+.radio-label:before {
   top: -3px;
   left: -4px;
   border: 2px solid #c29974;
@@ -163,7 +169,23 @@ label {
   background: transparent;
 }
 
-.checkbox-label:after {
+.radio-label:before {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+.radio-list-limit label:before {
+  border: none;
+  top: 5px;
+  left: 0px;
+  border-radius: 0;
+  width: 80px;
+  height: 35px;
+  background: #ffffff;
+}
+
+.checkbox-label:after,
+.radio-label:after {
   top: 0px;
   left: -1px;
   width: 14px;
@@ -171,15 +193,35 @@ label {
   background-image: url(..//img/v_simbol.svg);
   opacity: 0;
 }
+
+.radio-label:after {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  top: 3px;
+  left: 2px;
+  background-image: url(..//img/ellipse_radio.svg);
+}
+
+.radio-list-limit label:after {
+  border-radius: 0;
+  top: 5px;
+  left: 0px;
+  width: 80px;
+  height: 35px;
+  background: #f3d0db;
+}
 .checkbox-label:hover,
 .checkbox-label:active {
   text-decoration: underline;
 }
 
-.checkbox-input {
+.checkbox-input,
+.radio-input {
   display: none;
 }
-.checkbox-input:checked + .checkbox-label:after {
+.checkbox-input:checked + .checkbox-label:after,
+.radio-input:checked + .radio-label:after {
   opacity: 1;
 }
 
@@ -448,30 +490,31 @@ label {
   text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
 }
 
-/* COUNT */
-.blog__slider {
+/* page */
+.page {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 58px;
 }
-.blog__nums {
+.page__nums {
   display: flex;
   width: 234px;
 }
 
-.blog__count {
+.page__count {
   display: block;
 }
 
-span.blog__count:nth-child(1) {
+span.page__count:nth-child(1) {
   margin-right: 67px;
 }
 
-span.blog__count:nth-child(n + 2) {
+span.page__count:nth-child(n + 2) {
   margin-right: 64px;
 }
 
-.blog__count {
+.page__count {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 16px;
@@ -479,6 +522,6 @@ span.blog__count:nth-child(n + 2) {
   color: #1e0606;
 }
 
-.blog__count-active {
+.page__count-active {
   color: #c29974;
 }
