@@ -1,4 +1,5 @@
 /* BANNER */
+
 .banner {
   margin-bottom: 90px;
   padding-top: 90px;
@@ -333,4 +334,8 @@
 
 .contacts__map {
   max-width: 483px;
+}
+
+.header {
+  margin-bottom: 40px;
 }

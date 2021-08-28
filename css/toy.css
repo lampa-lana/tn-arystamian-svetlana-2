@@ -1,5 +1,5 @@
 .toy__heading {
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   font-weight: bold;
   font-size: 40px;
   line-height: 49px;
@@ -7,11 +7,19 @@
   color: #1e0606;
 }
 
-.toy__choice {
-  background: rgba(125, 151, 218, 0.2);
+.breadcrumb {
+  margin-bottom: 47px;
+}
+
+.choice__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .choice__title {
+  margin: 0;
+  padding: 0;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 16px;
@@ -20,6 +28,11 @@
   text-transform: capitalize;
 }
 
+.choice__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .choice__checkmark {
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
@@ -39,12 +52,36 @@
   background: #f3d0db;
 }
 
+.toy__choice {
+  margin-bottom: 44px;
+  background: rgba(125, 151, 218, 0.2);
+}
+
+.toy__prod {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
 .toy__item {
-  width: 380px;
-  height: 497px;
+  margin-bottom: 43px;
+}
+
+.toy__img {
+  margin-bottom: 30px;
+}
+.toy__link {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 380px;
 }
 
 .toy__text {
+  margin-bottom: 18px;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
@@ -67,4 +104,8 @@
 
 .toy__count-active {
   color: #c29974;
+}
+
+.blog__slider {
+  margin-bottom: 58px;
 }

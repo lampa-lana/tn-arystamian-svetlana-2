@@ -208,7 +208,7 @@ label {
   align-items: center;
   margin: auto;
   margin-top: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .logo {
@@ -446,4 +446,39 @@ label {
   text-transform: uppercase;
   color: #ffffff;
   text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+/* COUNT */
+.blog__slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blog__nums {
+  display: flex;
+  width: 234px;
+}
+
+.blog__count {
+  display: block;
+}
+
+span.blog__count:nth-child(1) {
+  margin-right: 67px;
+}
+
+span.blog__count:nth-child(n + 2) {
+  margin-right: 64px;
+}
+
+.blog__count {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1e0606;
+}
+
+.blog__count-active {
+  color: #c29974;
 }
