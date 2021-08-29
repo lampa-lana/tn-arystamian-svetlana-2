@@ -201,8 +201,18 @@
         <div class="footer__connect">
           <h4 class="footer__title">Connect</h4>
           <form action="#" class="footer__form">
-            <input type="text" placeholder="Email" class="footer__input" />
-            <button class="button">Join</button>
+            <fieldset class="footer__fieldset">
+              <div class="label-wrapper">
+                <label for="input-footer"></label>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="footer__input"
+                  id="input-footer"
+                />
+              </div>
+              <button class="button">Join</button>
+            </fieldset>
           </form>
           <ul class="footer__icons icons undoted">
             <li class="icons__item">

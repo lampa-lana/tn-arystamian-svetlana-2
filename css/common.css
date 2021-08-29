@@ -54,6 +54,14 @@ a {
   cursor: pointer;
 }
 
+.button:hover {
+  background: #c29974;
+}
+
+.button:active {
+  background: #cfaf91;
+}
+
 .undoted {
   list-style-type: none;
   padding: 0;
@@ -211,8 +219,11 @@ label {
   height: 35px;
   background: #f3d0db;
 }
+
 .checkbox-label:hover,
-.checkbox-label:active {
+.checkbox-label:active,
+.radio-label:hover,
+.radio-label:active {
   text-decoration: underline;
 }
 
@@ -256,6 +267,23 @@ label {
 .logo {
   max-width: 100px;
   max-height: 52px;
+}
+.logo:hover,
+.header__item:hover,
+.header__btn:hover,
+.header__button:hover {
+  opacity: 0.6;
+}
+
+.logo:active,
+.header__item:active,
+.header__btn:active,
+.header__button:active {
+  opacity: 0.2;
+}
+
+.header:checked {
+  background-color: yellow;
 }
 .header__nav {
   margin: 0 auto 0 60px;
@@ -329,6 +357,14 @@ label {
   margin-bottom: 15px;
 }
 
+.footer__item:hover {
+  opacity: 0.5;
+}
+
+.footer__item:active {
+  opacity: 0.2;
+}
+
 .footer__link {
   color: #ffffff;
   font-weight: normal;
@@ -343,6 +379,13 @@ label {
   color: #a2a2a2;
   font-weight: normal;
 }
+
+.footer__link-dl:active,
+.footer__link-dl:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
 .footer__icons {
   display: flex;
   margin-right: 10px;
@@ -365,6 +408,17 @@ label {
   text-transform: uppercase;
   color: #ffffff;
 }
+
+.footer__fieldset {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+}
+
+.footer__fieldset label {
+  margin-bottom: 0;
+}
 .footer__input {
   padding-left: 15px;
   width: 300px;
@@ -375,7 +429,12 @@ label {
   color: #ffffff;
 }
 
-::-webkit-input-placeholder {
+.footer__input:hover,
+.footer__input:focus {
+  border: 1px solid #fffdfd;
+}
+
+.footer__fieldset input::placeholder {
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 16px;
@@ -490,6 +549,12 @@ label {
   text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
 }
 
+.products__link:hover,
+.products__link:focus {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
 /* page */
 .page {
   display: flex;
@@ -502,8 +567,8 @@ label {
   width: 234px;
 }
 
-.page__count {
-  display: block;
+.page__count:hover {
+  color: #aaaaaa;
 }
 
 span.page__count:nth-child(1) {
@@ -515,6 +580,8 @@ span.page__count:nth-child(n + 2) {
 }
 
 .page__count {
+  display: block;
+  cursor: pointer;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 16px;
@@ -524,4 +591,8 @@ span.page__count:nth-child(n + 2) {
 
 .page__count-active {
   color: #c29974;
+}
+
+.page svg {
+  cursor: pointer;
 }

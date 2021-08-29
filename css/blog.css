@@ -54,6 +54,11 @@
   text-transform: none;
 }
 
+.blog__title:hover,
+.blog__title:active {
+  text-decoration: underline;
+}
+
 .blog__text {
   margin: 0;
   padding: 0;
