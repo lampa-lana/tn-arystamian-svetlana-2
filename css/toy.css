@@ -115,45 +115,12 @@ input[type="range"]::-webkit-slider-thumb {
   align-items: center;
 }
 
-.radio-limit {
-  width: 240px;
-}
-
 .radio-list-limit {
   margin: 0;
   padding: 0;
   width: 240px;
   display: flex;
   flex-direction: row;
-}
-
-.radio-list-limit li {
-  position: relative;
-  width: 80px;
-  height: 35px;
-}
-
-/* .radio-list-limit li:hover:before {
-  position: relative;
-  visibility: visible;
-}
-
-.radio-list-limit li:before {
-  content: "";
-  background-color: #eddeeb;
-  width: 80px;
-  height: 35px;
-  display: block;
-  position: absolute;
-  visibility: hidden;
-} */
-
-.radio__text {
-  position: absolute;
-  display: block;
-  top: 11px;
-  left: 25px;
-  cursor: pointer;
 }
 
 .choice__choice {

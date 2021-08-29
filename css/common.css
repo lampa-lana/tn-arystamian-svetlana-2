@@ -182,15 +182,6 @@ label {
   width: 20px;
   height: 20px;
 }
-.radio-list-limit label:before {
-  border: none;
-  top: 5px;
-  left: 0px;
-  border-radius: 0;
-  width: 80px;
-  height: 35px;
-  background: #ffffff;
-}
 
 .checkbox-label:after,
 .radio-label:after {
@@ -211,13 +202,53 @@ label {
   background-image: url(..//img/ellipse_radio.svg);
 }
 
+.radio-list-limit label:before {
+  border: none;
+  top: 5px;
+  left: 0px;
+  border-radius: 0;
+  width: 80px;
+  height: 35px;
+  background: #ffffff;
+}
 .radio-list-limit label:after {
   border-radius: 0;
-  top: 5px;
+  top: 0px;
   left: 0px;
   width: 80px;
   height: 35px;
   background: #f3d0db;
+}
+
+.radio-list-limit li {
+  position: relative;
+  width: 80px;
+  height: 35px;
+  background: #fff;
+}
+
+.radio-list-limit label:hover:before {
+  position: relative;
+  visibility: visible;
+}
+
+.radio-list-limit label:before {
+  content: "";
+  background-color: #eddeeb;
+  width: 80px;
+  height: 35px;
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  top: -22px;
+}
+
+.radio__text {
+  position: absolute;
+  display: block;
+  top: 7px;
+  left: 25px;
+  cursor: pointer;
 }
 
 .checkbox-label:hover,
