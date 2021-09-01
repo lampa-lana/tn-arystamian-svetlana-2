@@ -368,6 +368,7 @@ label {
 .footer__connect {
   width: 380px;
 }
+
 .footer__title {
   margin: 0;
   padding: 0;
@@ -426,15 +427,15 @@ label {
   margin-right: 10px;
 }
 
-.footer path:last-child:hover {
+.footer .icons__item:hover path:last-child {
   fill: #aaaaaa;
 }
 
-.footer path:first-child:active {
+.footer .icons__item:active path:first-child {
   fill: #5a59597a;
 }
 
-.footer path:last-child:active {
+.footer .icons__item:active path:last-child {
   fill: #464545;
 }
 
