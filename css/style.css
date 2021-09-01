@@ -333,10 +333,10 @@
   margin-bottom: 20px;
 }
 
-.contacts__map {
+.contacts__img {
   max-width: 483px;
+  width: 100%;
 }
-
 .header {
   margin-bottom: 40px;
 }

@@ -243,7 +243,7 @@ label {
   top: -22px;
 }
 
-.radio__text {
+.radio-text {
   position: absolute;
   display: block;
   top: 7px;
@@ -425,6 +425,19 @@ label {
 .icons__item {
   margin-right: 10px;
 }
+
+.footer path:last-child:hover {
+  fill: #aaaaaa;
+}
+
+.footer path:first-child:active {
+  fill: #5a59597a;
+}
+
+.footer path:last-child:active {
+  fill: #464545;
+}
+
 .footer__form {
   display: flex;
   margin-bottom: 23px;
@@ -481,13 +494,109 @@ label {
 
 .footer__wrap {
   width: 245px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin-right: 155px;
 }
-.footer__wrap-stars {
-  margin-left: 0 auto 0 25px;
+
+.footer__stars-field {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.footer__stars-list {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__stars-title {
+  width: 123px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.footer__stars-title:hover,
+.footer__stars-title:active {
+  color: #c29974;
+}
+.star-input {
+  display: none;
+}
+.star-label {
+  position: relative;
+}
+
+.star-label:before,
+.star-label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+
+.star-label:before {
+  top: -6px;
+  background-image: url(..//img/Star.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 17px;
+  height: 17px;
+}
+.star-label-one:before {
+  right: 1px;
+}
+
+.star-label-two:before {
+  right: 20px;
+}
+
+.star-label-three:before {
+  right: 40px;
+}
+
+.star-label-four:before {
+  right: 60px;
+}
+
+.star-label-five:before {
+  right: 80px;
+}
+
+.star-input:checked + .star-label:after {
+  top: -6px;
+  background-image: url(..//img/Star_active.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 17px;
+  height: 17px;
+}
+
+.star-input:checked + .star-label-one:after {
+  right: 1px;
+}
+
+.star-input:checked + .star-label-two:after {
+  right: 20px;
+}
+
+.star-input:checked + .star-label-three:after {
+  right: 40px;
+}
+
+.star-input:checked + .star-label-four:after {
+  right: 60px;
+}
+
+.star-input:checked + .star-label-five:after {
+  right: 80px;
 }
 
 .footer__text-copy {
@@ -626,4 +735,14 @@ span.page__count:nth-child(n + 2) {
 
 .page svg {
   cursor: pointer;
+}
+
+.page svg:hover path,
+.page svg:active path {
+  stroke: #c29974;
+  stroke-opacity: 1;
+}
+
+.page svg:active path {
+  stroke-opacity: 0.7;
 }
