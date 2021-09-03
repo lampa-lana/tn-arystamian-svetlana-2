@@ -249,11 +249,11 @@ label {
   cursor: pointer;
 }
 
-.radio-text-twenty {
+.radio-text_twenty {
   left: 19px;
 }
 
-.radio-text-fifty {
+.radio-text_fifty {
   left: 19px;
 }
 
@@ -725,6 +725,7 @@ label {
 }
 .page__nums {
   display: flex;
+  justify-content: space-between;
   width: 234px;
 }
 
@@ -766,4 +767,11 @@ span.page__count:nth-child(n + 2) {
 
 .page svg:active path {
   stroke-opacity: 0.7;
+}
+
+.page__arrow-right,
+.page__arrow-left {
+  border: transparent;
+  background-color: transparent;
+  padding: 0;
 }

@@ -167,15 +167,17 @@
 
 .products__arrows-left,
 .products__arrows-right {
-  width: 37px;
+  width: 35px;
   height: 37px;
   background: #70bbdc33;
   margin-right: 6px;
+  border: transparent;
 }
 
 .products__arrows-right {
-  margin-right: 20px;
+  margin-right: 23px;
 }
+
 /* DELIVERY */
 
 .delivery {
