@@ -100,6 +100,13 @@
 .banner__title {
   margin-bottom: 20px;
   margin-left: 133px;
+  font-family: "Crimson Text", serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  color: #1e0606;
+  text-transform: none;
 }
 
 .banner__button {
@@ -143,7 +150,8 @@
 .products__list {
   display: flex;
   justify-content: space-between;
-  margin: 0 -8px 30px;
+  margin: auto;
+  margin-bottom: 30px;
 }
 
 .products__text {
@@ -172,7 +180,7 @@
 
 .delivery {
   display: flex;
-  margin-bottom: 69px;
+  margin-bottom: 68px;
 }
 
 .delivery__info {

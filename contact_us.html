@@ -112,7 +112,7 @@
                   id="check-submit"
                   class="checkbox-input"
                 />
-                <label for="check-submit" class="checkbox-label">
+                <label for="check-submit" class="checkbox-label" tabindex="0">
                   By clicking on the button, you consent to the processing of
                   your personal data
                 </label>
@@ -333,51 +333,42 @@
         <!-- /connect -->
       </section>
       <div class="footer__other container">
-        <div class="footer__wrap">
-          <form action="#" class="footer__stars-form">
-            <fieldset class="footer__stars-field">
-              <!-- <legend>Company Rating</legend> -->
-              <h3 class="footer__stars-title">Company Rating</h3>
-              <ul class="undoted footer__stars-list">
-                <li>
-                  <input type="checkbox" id="star-one" class="star-input" />
-                  <label
-                    for="star-one"
-                    class="star-label star-label-one"
-                  ></label>
-                </li>
-                <li>
-                  <input type="checkbox" id="star-two" class="star-input" />
-                  <label
-                    for="star-two"
-                    class="star-label star-label-two"
-                  ></label>
-                </li>
-                <li>
-                  <input type="checkbox" id="star-three" class="star-input" />
-                  <label
-                    for="star-three"
-                    class="star-label star-label-three"
-                  ></label>
-                </li>
-                <li>
-                  <input type="checkbox" id="star-four" class="star-input" />
-                  <label
-                    for="star-four"
-                    class="star-label star-label-four"
-                  ></label>
-                </li>
-                <li>
-                  <input type="checkbox" id="star-five" class="star-input" />
-                  <label
-                    for="star-five"
-                    class="star-label star-label-five"
-                  ></label>
-                </li>
-              </ul>
-            </fieldset>
-          </form>
-        </div>
+        <form action="#" class="footer__stars-form">
+          <fieldset class="footer__stars-field" tabindex="0">
+            <h3 class="footer__stars-title">Company Rating</h3>
+            <ul class="undoted footer__stars-list">
+              <li>
+                <input type="checkbox" id="star-one" class="star-input" />
+                <label for="star-one" class="star-label star-label-one"></label>
+              </li>
+              <li>
+                <input type="checkbox" id="star-two" class="star-input" />
+                <label for="star-two" class="star-label star-label-two"></label>
+              </li>
+              <li>
+                <input type="checkbox" id="star-three" class="star-input" />
+                <label
+                  for="star-three"
+                  class="star-label star-label-three"
+                ></label>
+              </li>
+              <li>
+                <input type="checkbox" id="star-four" class="star-input" />
+                <label
+                  for="star-four"
+                  class="star-label star-label-four"
+                ></label>
+              </li>
+              <li>
+                <input type="checkbox" id="star-five" class="star-input" />
+                <label
+                  for="star-five"
+                  class="star-label star-label-five"
+                ></label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
         <p class="footer__text footer__text-copy">
           Copyright © 2018 Dlk • Design Life Kids
         </p>

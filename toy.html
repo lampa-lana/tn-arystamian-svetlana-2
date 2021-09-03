@@ -69,17 +69,17 @@
           <div class="toy__wrapper container">
             <form action="#" class="choice__form">
               <fieldset class="field-range">
-                <div class="label-wrapper label-wrapper-range">
+                <div class="label-wrapper label-wrapper-range" tabindex="0">
                   <label for="range-input">Cost</label>
                   <input type="range" id="range-input" min="0" max="500" />
                 </div>
                 <div class="range__period">
-                  <span class="range__num">0</span>
-                  <span class="range__num">500</span>
+                  <span class="range__num" tabindex="0">0</span>
+                  <span class="range__num" tabindex="0">500</span>
                 </div>
               </fieldset>
               <fieldset>
-                <legend>Color</legend>
+                <legend tabindex="0">Color</legend>
                 <ul class="undoted checkbox-list">
                   <li>
                     <input
@@ -88,7 +88,7 @@
                       class="checkbox-input"
                       checked
                     />
-                    <label for="check-black" class="checkbox-label"
+                    <label for="check-black" class="checkbox-label" tabindex="0"
                       >Black</label
                     >
                   </li>
@@ -98,7 +98,9 @@
                       id="check-blue"
                       class="checkbox-input"
                     />
-                    <label for="check-blue" class="checkbox-label">Blue</label>
+                    <label for="check-blue" class="checkbox-label" tabindex="0"
+                      >Blue</label
+                    >
                   </li>
                   <li>
                     <input
@@ -106,7 +108,7 @@
                       id="check-green"
                       class="checkbox-input"
                     />
-                    <label for="check-green" class="checkbox-label"
+                    <label for="check-green" class="checkbox-label" tabindex="0"
                       >Green</label
                     >
                   </li>
@@ -116,14 +118,14 @@
                       id="check-white"
                       class="checkbox-input"
                     />
-                    <label for="check-white" class="checkbox-label"
+                    <label for="check-white" class="checkbox-label" tabindex="0"
                       >White</label
                     >
                   </li>
                 </ul>
               </fieldset>
               <fieldset>
-                <legend>Delivery</legend>
+                <legend tabindex="0">Delivery</legend>
                 <ul class="undoted radio-list">
                   <li>
                     <input
@@ -132,7 +134,7 @@
                       class="radio-input"
                       name="shipping"
                     />
-                    <label for="radio-free" class="radio-label"
+                    <label for="radio-free" class="radio-label" tabindex="0"
                       >Free shipping</label
                     >
                   </li>
@@ -144,16 +146,16 @@
                       name="shipping"
                       checked
                     />
-                    <label for="radio-fast" class="radio-label"
+                    <label for="radio-fast" class="radio-label" tabindex="0"
                       >Fast shipping</label
                     >
                   </li>
                 </ul>
               </fieldset>
               <fieldset class="radio-limit">
-                <legend>Amount</legend>
+                <legend tabindex="0">Amount</legend>
                 <ul class="undoted radio-list radio-list-limit">
-                  <li>
+                  <li tabindex="0">
                     <input
                       type="radio"
                       id="radio-five"
@@ -164,7 +166,7 @@
                     <label for="radio-five" class="radio-label"></label>
                     <span class="radio-text">0-5</span>
                   </li>
-                  <li>
+                  <li tabindex="0">
                     <input
                       type="radio"
                       id="radio-twenty"
@@ -174,7 +176,7 @@
                     <label for="radio-twenty" class="radio-label"></label>
                     <span class="radio-text">10-20</span>
                   </li>
-                  <li>
+                  <li tabindex="0">
                     <input
                       type="radio"
                       id="radio-fifty"
@@ -186,7 +188,9 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="button choice__choice" type="submit">Apply</button>
+              <button class="button choice__choice" type="submit" tabindex="0">
+                Apply
+              </button>
             </form>
           </div>
         </div>
@@ -246,6 +250,7 @@
       <!-- /products -->
       <div class="page container">
         <svg
+          tabindex="0"
           width="18"
           height="30"
           viewBox="0 0 18 30"
@@ -260,12 +265,13 @@
           />
         </svg>
         <div class="page__nums">
-          <span class="page__count page__count-active">1</span>
-          <span class="page__count">2</span>
-          <span class="page__count">3</span>
-          <span class="page__count">4</span>
+          <span class="page__count page__count-active" tabindex="0">1</span>
+          <span class="page__count" tabindex="0">2</span>
+          <span class="page__count" tabindex="0">3</span>
+          <span class="page__count" tabindex="0">4</span>
         </div>
         <svg
+          tabindex="0"
           width="18"
           height="30"
           viewBox="0 0 18 30"
@@ -479,51 +485,42 @@
         <!-- /connect -->
       </section>
       <div class="footer__other container">
-        <div class="footer__wrap">
-          <form action="#" class="footer__stars-form">
-            <fieldset class="footer__stars-field">
-              <!-- <legend>Company Rating</legend> -->
-              <h3 class="footer__stars-title">Company Rating</h3>
-              <ul class="undoted footer__stars-list">
-                <li>
-                  <input type="checkbox" id="star-one" class="star-input" />
-                  <label
-                    for="star-one"
-                    class="star-label star-label-one"
-                  ></label>
-                </li>
-                <li>
-                  <input type="checkbox" id="star-two" class="star-input" />
-                  <label
-                    for="star-two"
-                    class="star-label star-label-two"
-                  ></label>
-                </li>
-                <li>
-                  <input type="checkbox" id="star-three" class="star-input" />
-                  <label
-                    for="star-three"
-                    class="star-label star-label-three"
-                  ></label>
-                </li>
-                <li>
-                  <input type="checkbox" id="star-four" class="star-input" />
-                  <label
-                    for="star-four"
-                    class="star-label star-label-four"
-                  ></label>
-                </li>
-                <li>
-                  <input type="checkbox" id="star-five" class="star-input" />
-                  <label
-                    for="star-five"
-                    class="star-label star-label-five"
-                  ></label>
-                </li>
-              </ul>
-            </fieldset>
-          </form>
-        </div>
+        <form action="#" class="footer__stars-form">
+          <fieldset class="footer__stars-field" tabindex="0">
+            <h3 class="footer__stars-title">Company Rating</h3>
+            <ul class="undoted footer__stars-list">
+              <li>
+                <input type="checkbox" id="star-one" class="star-input" />
+                <label for="star-one" class="star-label star-label-one"></label>
+              </li>
+              <li>
+                <input type="checkbox" id="star-two" class="star-input" />
+                <label for="star-two" class="star-label star-label-two"></label>
+              </li>
+              <li>
+                <input type="checkbox" id="star-three" class="star-input" />
+                <label
+                  for="star-three"
+                  class="star-label star-label-three"
+                ></label>
+              </li>
+              <li>
+                <input type="checkbox" id="star-four" class="star-input" />
+                <label
+                  for="star-four"
+                  class="star-label star-label-four"
+                ></label>
+              </li>
+              <li>
+                <input type="checkbox" id="star-five" class="star-input" />
+                <label
+                  for="star-five"
+                  class="star-label star-label-five"
+                ></label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
         <p class="footer__text footer__text-copy">
           Copyright © 2018 Dlk • Design Life Kids
         </p>
