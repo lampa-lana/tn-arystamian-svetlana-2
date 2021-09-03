@@ -1,5 +1,5 @@
 .blog {
-  margin-bottom: 16px;
+  margin-bottom: 13px;
 }
 .blog__heading {
   margin: 0;
@@ -22,11 +22,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 18px;
 }
+
 .blog__item {
   max-width: 380px;
-  margin-bottom: 32px;
+  margin-bottom: 34px;
 }
 
 .blog__img {
@@ -67,4 +67,8 @@
   font-size: 18px;
   line-height: 25px;
   color: #1e0606;
+}
+
+.page {
+  margin-bottom: 59px;
 }

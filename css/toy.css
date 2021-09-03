@@ -18,10 +18,9 @@
 
 /* CHOICE-form */
 .choice__form {
-  padding-top: 42px;
+  padding-top: 43px;
   padding-bottom: 8px;
   display: flex;
-  justify-content: space-between;
   align-items: start;
 }
 
@@ -37,19 +36,40 @@ legend {
   text-transform: capitalize;
 }
 
+.choice__form fieldset:nth-child(2) {
+  margin-right: 121px;
+}
+
+.choice__form fieldset:nth-child(3) {
+  margin-right: 70px;
+}
+
+.radio-limit {
+  margin-right: 60px;
+}
+
+.checkbox-list li {
+  margin-bottom: 15px;
+  width: 75px;
+}
+
 /* Range */
 
 .field-range {
   display: flex;
   flex-direction: column;
+  margin-right: 103px;
 }
+
 .label-wrapper-range {
   width: 200px;
   display: flex;
   align-items: start;
+  margin-bottom: 4px;
 }
 
 .label-wrapper-range label {
+  margin-bottom: 14px;
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
@@ -58,6 +78,11 @@ legend {
 .range__period {
   display: flex;
   justify-content: space-between;
+}
+
+.range__num {
+  display: block;
+  margin-right: -5px;
 }
 
 input[type="range"] {
@@ -85,15 +110,10 @@ input[type="range"]::-webkit-slider-thumb {
 
 /* CHeckbox, radio */
 
-.checkbox-list li {
-  margin-bottom: 15px;
-  width: 75px;
-}
-
 .checkbox-label,
 .radio-label {
   padding: 0;
-  padding-left: 25px;
+  padding-left: 27px;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -124,7 +144,14 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .choice__choice {
-  margin-top: 40px;
+  margin-top: 38px;
+  padding: 9px 22px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* Catalog */
