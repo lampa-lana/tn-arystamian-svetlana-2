@@ -350,3 +350,96 @@
 .header {
   margin-bottom: 40px;
 }
+
+/* POPUP */
+
+.popup {
+  background: rgba(125, 151, 218, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: none;
+}
+
+.popup_open {
+  display: block;
+}
+
+.popup__wrapper {
+  position: relative;
+  width: 680px;
+  background: #e5eaf8;
+  padding: 42px 40px 42px 40px;
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup__close {
+  position: absolute;
+  top: 2px;
+  right: -24px;
+  cursor: pointer;
+  border: none;
+}
+
+.popup__title {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+.popup__close {
+  border: transparent;
+  background-color: transparent;
+  padding: 0;
+}
+
+.popup label {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1e0606;
+  margin-bottom: 6px;
+}
+.popup .checkbox-label {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1e0606;
+  margin-bottom: 0;
+}
+
+.popup .checkbox-label:before {
+  top: -2px;
+  left: -2px;
+}
+.contact__form fieldset:nth-child(3) {
+  margin-bottom: 23px;
+}
+
+.popup .checkbox-wrap {
+  margin-bottom: 20px;
+}
+
+.button__submit {
+  background-color: #c1c1c1;
+  color: #e1e1e1;
+}
+
+.popup svg:hover path,
+.popup svg:active path {
+  stroke: rgba(240, 240, 240, 0.7);
+  stroke-opacity: 1;
+}
+
+.popup svg:active path {
+  stroke-opacity: 0.4;
+}

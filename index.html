@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,700;1,400;1,700&family=Montserrat:wght@300;600;700&family=Open+Sans:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap&family=Crimson+Text:ital,wght@0,700;1,400;1,700&family=Montserrat:wght@300;600;700&family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -28,9 +28,9 @@
             <a href="blog.html" target="_blank" class="header__link">Blog</a>
           </li>
           <li class="header__item">
-            <a href="products.html" target="_blank" class="header__link"
-              >Catalog</a
-            >
+            <a href="products.html" target="_blank" class="header__link">
+              Catalog
+            </a>
           </li>
           <li class="header__item">
             <a href="#" target="_blank" class="header__link">About Us</a>
@@ -82,7 +82,7 @@
           <div class="banner__screen">
             <h1 class="banner__heading">THE OOH NOO COLLECTION</h1>
             <h2 class="banner__title">Designed in Slovenia</h2>
-            <a href="#" target="_blank" class="button banner__button">
+            <a href="#" class="button banner__button banner__button_js">
               EXPLORE NOW
             </a>
           </div>
@@ -554,58 +554,72 @@
     <!-- footer -->
 
     <section class="popup contact">
-      <h2 class="popup__title contact__title">PopUp</h2>
-      <div class="popup__field contact__field">
-        <form action="#" class="contact__form">
-          <fieldset>
-            <div class="label-wrapper">
-              <label for="input-name">Name</label>
-              <input
-                type="text"
-                id="input-name"
-                class="contact__input"
-                placeholder="Ivan Ivanov"
-              />
-            </div>
-          </fieldset>
-          <fieldset class="contact__field2column field_2_column">
-            <div class="label-wrapper">
-              <label for="input-phone">Phone</label>
-              <input
-                type="tel"
-                id="input-phone"
-                class="contact__input"
-                required
-              />
-            </div>
-            <div class="label-wrapper">
-              <label for="input-email">Email</label>
-              <input type="email" id="input-email" class="contact__input" />
-            </div>
-          </fieldset>
-          <fieldset>
-            <div class="label-wrapper">
-              <label for="input-message">Message</label>
-              <textarea
-                name="message"
-                cols="3"
-                rows="1"
-                id="input-message"
-              ></textarea>
-            </div>
-          </fieldset>
-          <fieldset class="checkbox-wrap">
-            <div class="checkbox-list">
-              <input type="checkbox" id="check-cash" class="checkbox-input" />
-              <label for="check-cash" class="checkbox-label" tabindex="0">
-                By clicking on the button, you consent to the processing of your
-                personal data
-              </label>
-            </div>
-          </fieldset>
-          <button class="button contact__button" type="submit">Submit</button>
-        </form>
+      <div class="popup__wrapper">
+        <button class="popup__close">
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 15 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.21902 14.6113C1.70029 15.1295 0.893368 15.1295 0.374636 14.6113C0.11527 14.3522 -6.13512e-07 14.0355 -5.9841e-07 13.69C-5.83308e-07 13.3445 0.11527 13.0278 0.374636 12.7687L5.64841 7.5L0.374637 2.23127C0.115271 1.97215 -7.23629e-08 1.65547 -5.72611e-08 1.30998C-4.21593e-08 0.964491 0.115271 0.647806 0.374637 0.388689C0.893369 -0.129545 1.70029 -0.129545 2.21902 0.388689L7.4928 5.65738L12.7666 0.38869C13.2853 -0.129545 14.0922 -0.129545 14.611 0.38869C15.1297 0.906924 15.1297 1.71304 14.611 2.23127L9.33718 7.5L14.611 12.7687C15.1297 13.287 15.1297 14.0931 14.611 14.6113C14.0922 15.1295 13.2853 15.1295 12.7666 14.6113L7.4928 9.34258L2.21902 14.6113Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+        <h2 class="popup__title contact__title">PopUp</h2>
+        <div class="popup__field contact__field">
+          <form action="#" class="contact__form">
+            <fieldset>
+              <div class="label-wrapper">
+                <label for="input-name">Name</label>
+                <input type="text" id="input-name" class="contact__input" />
+              </div>
+            </fieldset>
+            <fieldset class="contact__field2column field_2_column">
+              <div class="label-wrapper">
+                <label for="input-phone">Phone</label>
+                <input
+                  type="tel"
+                  id="input-phone"
+                  class="contact__input"
+                  required
+                />
+              </div>
+              <div class="label-wrapper">
+                <label for="input-email">Email</label>
+                <input type="email" id="input-email" class="contact__input" />
+              </div>
+            </fieldset>
+            <fieldset>
+              <div class="label-wrapper">
+                <label for="input-message">Message</label>
+                <textarea
+                  name="message"
+                  cols="3"
+                  rows="1"
+                  id="input-message"
+                ></textarea>
+              </div>
+            </fieldset>
+            <fieldset class="checkbox-wrap">
+              <div class="checkbox-list">
+                <input type="checkbox" id="check-cash" class="checkbox-input" />
+                <label for="check-cash" class="checkbox-label" tabindex="0">
+                  By clicking on the button, you consent to the processing of
+                  your personal data
+                </label>
+              </div>
+            </fieldset>
+            <button class="button contact__button button__submit" type="submit">
+              Submit
+            </button>
+          </form>
+        </div>
       </div>
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
