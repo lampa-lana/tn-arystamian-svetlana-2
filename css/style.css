@@ -280,22 +280,24 @@
 
 /* INFO */
 .info {
-  margin-bottom: 158px;
+  margin-bottom: 48px;
   display: flex;
 }
 
 /* DESINGN */
 .design {
   width: 543px;
-  padding-bottom: 25px;
-  background-color: #e1f0f7;
+  /* padding-bottom: 25px; */
+  /* background-color: #e1f0f7; */
   margin-right: 57px;
 }
 
 .design__wrap {
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
+  padding-left: 30px;
+  background-color: #e1f0f7;
+  padding-bottom: 25px;
 }
 .design__wrap a {
   max-width: 123px;
@@ -323,14 +325,16 @@
 
 .contacts {
   width: 543px;
-  height: 209px;
-  background-color: #e1f0f7;
+  /* background-color: #e1f0f7; */
+  padding-bottom: 5px;
 }
 
 .contacts__wrap {
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
+  padding-left: 30px;
+  padding-bottom: 80px;
+  background-color: #e1f0f7;
 }
 
 .contacts__heading {
@@ -347,6 +351,12 @@
   max-width: 483px;
   width: 100%;
 }
+
+.contacts__map {
+  padding-left: 30px;
+  margin-top: -81px;
+}
+
 .header {
   margin-bottom: 40px;
 }

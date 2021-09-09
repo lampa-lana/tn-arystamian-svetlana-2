@@ -340,15 +340,15 @@ label {
 .header__button {
   font-weight: bold;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 20px;
   text-transform: uppercase;
-  margin-left: 24px;
+  margin-left: 20px;
 }
 
 .header__btn {
   width: 24px;
   height: 24px;
-  margin-top: 5px;
+  margin-top: 2px;
   border: none;
   overflow: hidden;
   object-fit: cover;
