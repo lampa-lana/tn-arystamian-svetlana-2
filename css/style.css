@@ -14,6 +14,7 @@
 }
 
 .banner__wrap {
+  position: relative;
   background-color: #eee4db;
 }
 
@@ -70,19 +71,12 @@
 .banner__btn-active {
   background: rgba(30, 6, 6, 0.6);
 }
-.banner__innerpic {
-  position: relative;
-  max-width: 635px;
-  max-height: 461px;
-  z-index: 1;
-}
 
 .banner__img {
   position: absolute;
   max-width: 635px;
-  right: 100px;
-  left: 445px;
-  bottom: 0;
+  bottom: 0px;
+  right: 99px;
 }
 
 .banner__heading {
