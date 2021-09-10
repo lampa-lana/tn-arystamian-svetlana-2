@@ -110,8 +110,9 @@
 }
 
 .banner__button {
-  margin-bottom: 89px;
+  margin-bottom: 91px;
   margin-left: 133px;
+  padding: 10px 22px 10px 22px;
 }
 
 .products__heading,
@@ -198,6 +199,7 @@
   overflow: hidden;
   object-fit: cover;
   margin-right: 60px;
+  background-color: rgba(112, 187, 220, 0.2);
 }
 
 .delivery__img {
@@ -384,14 +386,14 @@
   background: #e5eaf8;
   padding: 42px 40px 42px 40px;
   position: absolute;
-  top: 43%;
+  top: 39.6%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .popup__close {
   position: absolute;
-  top: 2px;
+  top: 0px;
   right: -24px;
   cursor: pointer;
   border: none;

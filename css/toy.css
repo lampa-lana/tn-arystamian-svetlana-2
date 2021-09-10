@@ -65,7 +65,7 @@ legend {
   width: 200px;
   display: flex;
   align-items: start;
-  margin-bottom: 4px;
+  margin-bottom: 7px;
 }
 
 .label-wrapper-range label {
@@ -145,7 +145,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 .choice__choice {
   margin-top: 38px;
-  padding: 9px 22px;
+  padding: 11px 22px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: bold;

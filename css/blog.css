@@ -30,8 +30,11 @@
 }
 
 .blog__img {
+  min-height: 220px;
   margin-bottom: 18px;
+  background-color: #70bbdc;
 }
+
 .blog__date {
   margin: 0;
   padding: 0;
@@ -70,5 +73,5 @@
 }
 
 .page {
-  margin-bottom: 59px;
+  margin-bottom: 56px;
 }

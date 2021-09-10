@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Favorite Store DLK</title>
     <link rel="stylesheet" href="css/normalize.css" class="css" />
-    <link rel="stylesheet" href="css/common.css" class="css" />
-    <link rel="stylesheet" href="css/style.css" class="css" />
+    <link rel="stylesheet" href="css/common.min.css" class="css" />
+    <link rel="stylesheet" href="css/style.min.css" class="css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -83,9 +83,12 @@
           <div class="banner__screen">
             <h1 class="banner__heading">THE OOH NOO COLLECTION</h1>
             <h2 class="banner__title">Designed in Slovenia</h2>
-            <a href="#" class="button banner__button banner__button_js">
+            <button class="button banner__button banner__button_js">
               EXPLORE NOW
-            </a>
+            </button>
+            <!-- <a href="#" class="button banner__button banner__button_js">
+              EXPLORE NOW
+            </a> -->
           </div>
           <div class="banner__innerpic">
             <img src="img/monster.png" alt="cute monster" class="banner__img" />
@@ -614,13 +617,17 @@
                 </label>
               </div>
             </fieldset>
-            <button class="button contact__button button__submit" type="submit">
+            <button
+              class="button contact__button button__submit"
+              type="submit"
+              disabled
+            >
               Submit
             </button>
           </form>
         </div>
       </div>
     </section>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
